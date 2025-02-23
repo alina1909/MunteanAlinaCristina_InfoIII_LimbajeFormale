@@ -1,0 +1,16 @@
+client: Ion Popescu
+email: ion.popescuaemail.com  
+
+produs: Laptop
+pret: 2500.00
+TVA: 20%  
+cantitate: cinci  
+
+produs: Telefon
+pret: 1200
+TVA: 19%
+cantitate: 2
+
+client: Maria Ionescu 
+email: maria.ionescu@email.com
+
