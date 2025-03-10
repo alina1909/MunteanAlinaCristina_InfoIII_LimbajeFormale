@@ -1,0 +1,89 @@
+M'=(Q,Σ,δ',q0,F')
+Q={q0,q1,q2,q3,q4}
+Σ={a,b}
+F'=F U {q0}={q4} U {q0}={q0,q4}
+
+δ^(q0,ε)=ε-closure(q0)={q0}
+δ^(q1,ε)=ε-closure(q1)={q1,q2}
+δ^(q2,ε)=ε-closure(q2)={q2}
+δ^(q3,ε)=ε-closure(q3)={q3,q4}
+δ^(q4,ε)=ε-closure(q4)={q4}
+
+
+
+
+δ'(q0,a)=δ^(q0,a)
+=ε-closure(δ(δ^(q0,ε),a))
+=ε-closure(δ({q0},a))
+=ε-closure(q1)
+={q1,q2}
+
+
+δ'(q0,b)=δ^(q0,b)
+=ε-closure(δ(δ^(q0,ε),b))
+=ε-closure(δ({q0},b))
+=ε-closure(Ø)
+=Ø 
+
+
+δ'(q1,a)=δ^(q1,a)
+=ε-closure(δ(δ^(q1,ε),a))
+=ε-closure(δ({q1,q2},a))
+=ε-closure(δ(q1,a) U δ(q2,a))
+=ε-closure({q1} U {q3})
+={q1,q2,q3,q4}              ??
+
+
+δ'(q1,b)=δ^(q1,b)
+=ε-closure(δ(δ^(q1,ε),b))
+=ε-closure(δ({q1,q2},b))
+=ε-closure(δ(q1,b) U δ(q2,b))
+=ε-closure(Ø U {q2,q3})
+={q2,q3,q4}             ??
+
+
+δ'(q2,a)=δ^(q2,a)
+=ε-closure(δ(δ^(q2,ε),a))
+=ε-closure(δ({q2},a))
+=ε-closure(q3)
+={q3,q4}
+
+
+
+δ'(q2,b)=δ^(q2,b)
+=ε-closure(δ(δ^(q2,ε),b))
+=ε-closure(δ({q2},b))
+=ε-closure({q2,q3})
+={q2,q3,q4}         ??
+
+
+δ'(q3,a)=δ^(q3,a)
+=ε-closure(δ(δ^(q3,ε),a))
+=ε-closure(δ({q3,q4},a))
+=ε-closure(δ(q3,a) U δ(q4,a))
+=ε-closure({q3} U Ø)
+=ε-closure(q3)
+={q3,q4}
+
+
+δ'(q3,b)=δ^(q3,b)
+=ε-closure(δ(δ^(q3,ε),b))
+=ε-closure(δ({q3,q4},b))
+=ε-closure(δ(q3,b) U δ(q4,b))
+=ε-closure({q1} U Ø)
+=ε-closure(q1)
+={q1,q2}
+
+
+δ'(q4,a)=δ^(q4,a)
+=ε-closure(δ(δ^(q4,ε),a))
+=ε-closure(δ({q4},a))
+=ε-closure(Ø)
+=Ø 
+
+
+δ'(q4,b)=δ^(q4,b)
+=ε-closure(δ(δ^(q4,ε),b))
+=ε-closure(δ({q4},b))
+=ε-closure(Ø)
+=Ø 
