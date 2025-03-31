@@ -1,0 +1,44 @@
+1.  L={0^i 1^j | i>j}
+
+i=3 j=2   W=0^i 1^j    
+x=0^2
+y=0
+z=1^2
+
+w=xy^iz=0^2 0^i 1^2
+
+pt i=2 :  xy^2z=0^2 0^2 1^2=0^4 1^2
+pt i=0 :  xy^0z=0^2 0^0 1^2=0^2 1^2   Contradictie
+
+
+
+
+2.  L={a^i b^j | i<=j}
+
+i=2 j=3   W=a^i b^j    
+x=a^1
+y=a
+z=b^3
+
+w=xy^iz=a^1 a^i b^3
+
+pt i=2 :  xy^2z=a^1 a^2 b^3=a^3 b^3
+pt i=3 :  xy^3z=a^1 a^3 b^3=a^4 b^3   Contradictie
+
+
+
+
+3.  L={a^n b^n c^n | n>0}
+
+n=3   W=a^n b^n c^n    
+x=a^2
+y=a
+z=b^3 c^3
+
+w=xy^iz=a^2 a^i b^3 c^3
+
+pt i=1 :  xy^0z=a^2 a^1 b^3 c^3=a^3 b^3 c^3
+pt i=2 :  xy^3z=a^2 a^2 b^3 c^3=a^4 b^3 c^3   Contradictie
+
+
+
